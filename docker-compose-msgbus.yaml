@@ -1,0 +1,114 @@
+services:
+  ves-collector:
+    image: nexus3.onap.org:10001/onap/org.onap.dcaegen2.collectors.ves.vescollector:1.12.4-configured
+    build:
+      context: ./config/ves-collector
+      args:
+        - BASEIMAGE=nexus3.onap.org:10001/onap/org.onap.dcaegen2.collectors.ves.vescollector:1.12.4
+    container_name: ves-collector
+    hostname: ves-collector
+    healthcheck:
+      test: curl -k -u sample1:sample1 http://localhost:8080 || exit 1
+      start_period: 1s
+      interval: 5s
+      timeout: 4s
+      retries: 5
+    environment:
+      DMAAPHOST: messages
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config/ves-collector/collector.properties:/opt/app/VESCollector/etc/collector.properties
+      - ./config/ves-collector/ves-dmaap-config.json:/opt/app/VESCollector/etc/ves-dmaap-config.json
+    networks:
+      smo:
+
+  zookeeper:
+    image: quay.io/strimzi/kafka:0.35.0-kafka-3.4.0
+    command: [
+        "sh", "-c",
+        "bin/zookeeper-server-start.sh config/zookeeper.properties"
+      ]
+    ports:
+      - '2181:2181'
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      LOG_DIR: /tmp/logs
+    networks:
+      smo:
+    
+
+  kafka:
+    image: quay.io/strimzi/kafka:0.35.0-kafka-3.4.0
+    container_name: common-kafka-1-1
+    command: [
+      "sh", "-c",
+      "bin/kafka-server-start.sh /tmp/kafka/strimzi.properties"
+    ]
+    environment:
+      LOG_DIR: /tmp/logs
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "9097:9097"
+    volumes:
+      - ./config/kafka/strimzi.properties:/tmp/kafka/strimzi.properties
+    networks:
+      smo:
+
+  redpanda:
+    container_name: redpanda-console
+    image: redpandadata/console:v2.2.3
+    restart: on-failure
+    hostname: redpanda-console
+    ports:
+    - "8780:8080"
+    depends_on:
+      - kafka
+    environment:
+      KAFKA_BROKERS: kafka:9092
+    networks:
+      smo:
+
+  messages:
+    container_name: messages
+    image: nexus3.onap.org:10001/onap/dmaap/dmaap-mr:1.1.18
+    hostname: messages
+    ports:
+      - 3904:3904
+      - 3905:3905
+    environment:
+      enableCadi: 'false'
+    volumes:
+      - ./config/dmaap/MsgRtrApi.properties:/appl/dmaapMR1/bundleconfig/etc/appprops/MsgRtrApi.properties
+      - ./config/dmaap/logback.xml:/appl/dmaapMR1/bundleconfig/etc/logback.xml
+    depends_on:
+      - zookeeper
+      - kafka
+    networks:
+      smo:
+  
+  kafka-bridge:
+    image: quay.io/strimzi/kafka-bridge:0.30.0
+    container_name: kafka-bridge
+    hostname: kafka-bridge
+    entrypoint: /opt/strimzi/bin/kafka_bridge_run.sh
+    command: --config-file=config/application.properties
+    healthcheck:
+      test: curl http://localhost:8080/healthy || exit 1
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - ./config/kafka-bridge:/opt/strimzi/config
+    depends_on:
+      kafka:
+        condition: service_started
+    networks:
+      smo:
+
+networks:
+  smo:
+    external: true
