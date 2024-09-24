@@ -1,0 +1,46 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "__",
+      "eventName": "stndDefined_O_RAN_COMPONENT_Alarms_@alarm@",
+      "eventType": "O_RAN_COMPONENT_Alarms",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "",
+      "startEpochMicrosec": 1723044734818871,
+      "lastEpochMicrosec": 1723044734818871,
+      "nfNamingCode": "",
+      "nfVendorName": "@vendor@",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "file-ready",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/-/raw/Rel-16/OpenAPI/TS28532_FileDataReportingMnS.yaml#components/schemas/NotifyFileReady",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyFileReady",
+        "eventTime": "2024-08-07T15:32:14.818871Z",
+        "systemDN": "xyz",
+        "fileInfoList": [{
+            "fileLocation": "/pm-data-files/A20240807.1515+0000-1530+0000_.xml",
+            "fileSize": 1234,
+            "fileReadyTime": "2024-08-07T15:32:14.818871Z",
+            "fileExpirationTime": "2024-08-07T15:32:14.818871Z",
+            "fileCompression": "no",
+            "fileFormat": "xml",
+            "fileDataType": "Performance"
+        }
+        ],
+        "additionalText": "Have fun!"
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

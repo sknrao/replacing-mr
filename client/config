@@ -1,0 +1,138 @@
+################################################################################
+# Copyright 2021 highstreet technologies GmbH and others
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+################################################################################
+# Configuration for interface tests
+
+################################################################################
+# DCAE VES Collector communication end point
+# urlVes=https://smo.o-ran-sc.org:8443/eventListener/v7
+urlVes=http://localhost:8080/eventListener/v7
+basicAuthVes=sample1:sample1
+
+################################################################################
+# common generated event settings, please dont touch
+timestamp=$(date -u +%s%6N)
+timeInS=${timestamp:0:$((${#timestamp}-6))}
+timeMs=${timestamp:(-6)}
+eventTime=$(date -u -d @$timeInS +'%Y-%m-%dT%H:%M:%S').$timeMs"Z"
+eventType="O_RAN_COMPONENT"
+
+################################################################################
+# Information from document: SDN-R System Requirements
+#
+# a. VendorA   pnf2 BestInClass    (pnf2)
+# b. VendorA   FancyNextGeneration (FYNG)
+# c. VendorB   R2D2 NewFuture      (R2D2)
+# d. VendorB   7200DEV             (7DEV)
+# e. VendorC   TheSkyIsTheLimit    (nSky)
+# f. VendorC   OpenSourceFirst     (1OSF)
+
+# g. VendorA   PNF5G               (NO5G)
+# h. VendorB   PNF5G               (VB5G)
+# i. VendorC   NGCell              (NGCE)
+# j. VendorC   O-RU                (SCRU)
+#
+# z. SDN-R     Controller itself   (SDNR)
+
+declare -A pnfIdByType;
+declare -A modelByType;
+declare -A oamIpByType;
+declare -A vendorsByType;
+declare -A interfaceByType;
+
+pnfIdByType=(
+    [pnf2]=NSHMRIACQ01M01pnf201
+    [fyng]=LKCYFL79Q01M01FYNG01
+    [r2d2]=MMTSIL02Q01M01R2D201
+    [7dev]=PRTNILACQ01M017DEV01
+    [nsky]=O-RAN-FH-IPv6-01
+    [1OSF]=SNSNFLR0Q01M011OSF01
+
+    [no5g]=MMTSIL02Q01M01NO5G01
+    [vb5g]=PRTNILACQ01M01VB5G01
+    [ngce]=SEDNKSAHQ01M01NGCE01
+    [scru]=SNSNFLR0Q01M01SCRU01
+
+    [sdnr]=$(hostname --fqdn)
+);
+
+modelByType=(
+    [pnf2]="pnf2 BestInClass"
+    [fyng]="FancyNextGeneration"
+    [r2d2]="R2D2 NewFuture"
+    [7dev]="7200DEV"
+    [nsky]="TheSkyIsTheLimit"
+    [1OSF]="OpenSourceFirst"
+
+    [no5g]="PNF5G"
+    [vb5g]="PNF5G"
+    [ngce]="NGCell"
+    [scru]="O-RU"
+
+    [sdnr]="ONAP Controller for Radio"
+);
+
+oamIpByType=(
+    [pnf2]=10.10.10.11
+    [fyng]=10.10.10.12
+    [r2d2]=10.10.10.13
+    [7dev]=10.10.10.14
+    [nsky]=10.10.10.15
+    [1OSF]=10.10.10.16
+
+    [no5g]=10.10.10.17
+    [vb5g]=10.10.10.18
+    [ngce]=10.10.10.19
+    [scru]=10.10.10.20
+
+    [sdnr]=127.0.0.1
+);
+
+vendorsByType=(
+    [pnf2]=VendorA
+    [fyng]=VendorA
+    [r2d2]=VendorB
+    [7dev]=VendorB
+    [nsky]=VendorC
+    [1OSF]=VendorC
+
+    [no5g]=VendorA
+    [vb5g]=VendorB
+    [ngce]=VendorC
+    [scru]=VendorC
+
+    [sdnr]=ONAP
+);
+
+interfaceByType=(
+    [pnf2]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [fyng]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [r2d2]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [7dev]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [nsky]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [1OSF]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [no5g]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [vb5g]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [ngce]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [scru]=4af8681f-f2e4-4058-8052-4e9343ee7bf2
+    [sdnr]=northbound-interface
+)
+
+spaces="                   ";
+sequence=;
+
+mkdir -p json/examples

@@ -1,0 +1,36 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "__",
+      "eventName": "stndDefined_O_RAN_COMPONENT_heartbeat",
+      "eventType": "O_RAN_COMPONENT_heartbeat",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "",
+      "startEpochMicrosec": 1723044835853008,
+      "lastEpochMicrosec": 1723044835853008,
+      "nfNamingCode": "",
+      "nfVendorName": "",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "3GPP-Heartbeat",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/-/raw/Rel-16/OpenAPI/TS28532_HeartbeatNtf.yaml#components/schemas/NotifyHeartbeat",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyHeartbeat",
+        "eventTime": "2024-08-07T15:33:55.853008Z",
+        "systemDN": "xyz",
+        "heartbeatNtfPeriod": 120
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "pnfRegistration",
+            "eventId": "PRTNILACQ01M017DEV01_7200DEV",
+            "eventName": "pnfRegistration_EventType5G",
+            "eventType": "EventType5G",
+            "sequence": 0,
+            "priority": "Low",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "PRTNILACQ01M017DEV01",
+            "startEpochMicrosec": 1723124457304188,
+            "lastEpochMicrosec": 1723124457304188,
+            "nfNamingCode": "7DEV",
+            "nfVendorName": "VENDORB",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "pnfRegistrationFields": {
+            "pnfRegistrationFieldsVersion": "2.1",
+            "lastServiceDate": "2021-03-26",
+            "macAddress": "02:42:f7:d4:62:ce",
+            "manufactureDate": "2021-01-16",
+            "modelNumber": "7200DEV",
+            "oamV4IpAddress": "10.10.10.14",
+            "oamV6IpAddress": "0:0:0:0:0:ffff:a0a:014",
+            "serialNumber": "VENDORB-7DEV-10.10.10.14-7200DEV",
+            "softwareVersion": "2.3.5",
+            "unitFamily": "VENDORB-7DEV",
+            "unitType": "7DEV",
+            "vendorName": "VENDORB",
+            "additionalFields": {
+                "oamPort": "830",
+                "protocol": "SSH",
+                "username": "netconf",
+                "password": "netconf",
+                "reconnectOnChangedSchema": "false",
+                "sleep-factor": "1.5",
+                "tcpOnly": "false",
+                "connectionTimeout": "20000",
+                "maxConnectionAttempts": "100",
+                "betweenAttemptsTimeout": "2000",
+                "keepaliveDelay": "120"
+            }
+        }
+    }
+}
