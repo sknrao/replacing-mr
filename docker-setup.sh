@@ -89,6 +89,12 @@ echo "Starting containers for: kafka, zookeeper, kafka client, minio"
 docker compose -p msgbus -f docker-compose-msgbus.yaml up -d
 }
 
+
+setup_collector() {
+echo "Starting containers for: kafka, zookeeper, kafka client, minio"
+docker compose -p collector -f docker-compose-collector.yaml up -d
+}
+
 create_docker_networks() {
 echo "Creating Docker Netowrks: $DNETWORKS"
 for net in $DNETWORKS; do
@@ -143,3 +149,8 @@ setup_kafka
 check_error $?
 
 create_topics
+
+setup_collector
+check_error $?
+
+echo "All set, you can start sending messages now"

@@ -1,28 +1,4 @@
 services:
-  ves-collector:
-    image: nexus3.onap.org:10001/onap/org.onap.dcaegen2.collectors.ves.vescollector:1.12.4-configured
-    build:
-      context: ./config/ves-collector
-      args:
-        - BASEIMAGE=nexus3.onap.org:10001/onap/org.onap.dcaegen2.collectors.ves.vescollector:1.12.4
-    container_name: ves-collector
-    hostname: ves-collector
-    healthcheck:
-      test: curl -k -u sample1:sample1 http://localhost:8080 || exit 1
-      start_period: 1s
-      interval: 5s
-      timeout: 4s
-      retries: 5
-    environment:
-      DMAAPHOST: messages
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./config/ves-collector/collector.properties:/opt/app/VESCollector/etc/collector.properties
-      - ./config/ves-collector/ves-dmaap-config.json:/opt/app/VESCollector/etc/ves-dmaap-config.json
-    networks:
-      smo:
-
   zookeeper:
     image: quay.io/strimzi/kafka:0.35.0-kafka-3.4.0
     command: [
@@ -74,7 +50,7 @@ services:
 
   messages:
     container_name: messages
-    image: nexus3.onap.org:10001/onap/dmaap/dmaap-mr:1.1.18
+    image: nexus3.onap.org:10001/onap/dmaap/dmaap-mr:1.4.4
     hostname: messages
     ports:
       - 3904:3904

@@ -19,5 +19,6 @@
 
 echo "Stop and remove all containers in the project"
 
+docker compose -p collector -f docker-compose-collector.yaml down
 docker compose -p msgbus -f docker-compose-msgbus.yaml down
 docker compose -p security -f docker-compose-security.yaml down

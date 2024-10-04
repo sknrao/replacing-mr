@@ -11,8 +11,8 @@
             "reportingEntityName": "drona",
             "sourceId": "",
             "sourceName": "O-RAN-FH-IPv6-01",
-            "startEpochMicrosec": 1723123849601855,
-            "lastEpochMicrosec": 1723123849601855,
+            "startEpochMicrosec": 1728062810634949,
+            "lastEpochMicrosec": 1728062810634949,
             "nfNamingCode": "NSKY",
             "nfVendorName": "VENDORC",
             "timeZoneOffset": "+00:00",
@@ -28,7 +28,7 @@
             "eventSeverity": "CRITICAL",
             "vfStatus": "Active",
             "alarmAdditionalInformation": {
-                "eventTime": "2024-08-08T13:30:49.601855Z",
+                "eventTime": "2024-10-04T17:26:50.634949Z",
                 "equipType": "NSKY",
                 "vendor": "VENDORC",
                 "model": "TheSkyIsTheLimit"
