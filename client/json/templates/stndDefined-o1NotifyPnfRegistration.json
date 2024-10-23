@@ -21,7 +21,7 @@
       "vesEventListenerVersion": "7.2.1"
     },
     "stndDefinedFields": {
-      "schemaReference": "https://gerrit.o-ran-sc.org/r/gitweb?p=scp/oam/modeling.git;a=blob;f=data-model/yang/working/o-ran-sc/template/yes-o1-notify-pnf-registration.yang",
+      "schemaReference": "https://gerrit.o-ran-sc.org/r/gitweb?p=scp/oam/modeling.git;a=blob_plain;f=data-model/yang/working/o-ran-sc/template/yes-o1-notify-pnf-registration.yang",
       "data": {
         "object-class": "managed-element",
         "object-instance": "@pnfId@",

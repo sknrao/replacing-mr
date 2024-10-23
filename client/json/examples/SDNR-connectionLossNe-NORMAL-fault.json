@@ -1,0 +1,38 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "fault",
+            "eventId": "drona_northbound-interface_connectionLossNe",
+            "eventName": "fault_ONAP_SDNR_Controller_Alarms_connectionLossNe",
+            "eventType": "ONAP_SDNR_Controller_Alarms",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "drona",
+            "startEpochMicrosec": 1729692917209379,
+            "lastEpochMicrosec": 1729692917209379,
+            "nfNamingCode": "SDNR",
+            "nfVendorName": "ONAP",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "faultFields": {
+            "faultFieldsVersion": "4.0",
+            "alarmCondition": "connectionLossNe",
+            "alarmInterfaceA": "northbound-interface",
+            "eventSourceType": "ONAP_SDNR_Controller",
+            "specificProblem": "connectionLossNe",
+            "eventSeverity": "NORMAL",
+            "vfStatus": "Active",
+            "alarmAdditionalInformation": {
+                "eventTime": "2024-10-23T14:15:17.209379Z",
+                "equipType": "SDNR",
+                "vendor": "ONAP",
+                "model": "ONAP Controller for Radio"
+            }
+        }
+    }
+}

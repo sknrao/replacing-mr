@@ -1,0 +1,61 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "LKCYFL79Q01M01FYNG01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_TCA",
+      "eventName": "stndDefined_O_RAN_COMPONENT_Alarms_TCA",
+      "eventType": "O_RAN_COMPONENT_Alarms",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "LKCYFL79Q01M01FYNG01",
+      "startEpochMicrosec": 1729692917517586,
+      "lastEpochMicrosec": 1729692917517586,
+      "nfNamingCode": "FYNG",
+      "nfVendorName": "VENDORA",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "3GPP-FaultSupervision",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/raw/Rel-18/OpenAPI/TS28111_FaultNrm.yaml#components/schemas/NotifyNewAlarm",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyNewAlarm",
+        "eventTime": "2024-10-23T14:15:17.517586Z",
+        "systemDN": "xyz",
+        "alarmId": "TCA",
+        "alarmType": "COMMUNICATIONS_ALARM",
+        "probableCause": "TCA",
+        "specificProblem": "TCA",
+        "perceivedSeverity": "MAJOR",
+        "backedUpStatus": true,
+        "backUpObject": "xyz",
+        "trendIndication": "MORE_SEVERE",
+        "thresholdInfo": {
+          "observedMeasurement": "new",
+          "observedValue": 123.1
+        },
+        "correlatedNotifications": [],
+        "stateChangeDefinition": [{ "operational-state": "DISABLED" }],
+        "monitoredAttributes": {
+          "interface": "4af8681f-f2e4-4058-8052-4e9343ee7bf2"
+        },
+        "proposedRepairActions": "Call the police!",
+        "additionalText": "O-RAN Software Community OAM",
+        "additionalInformation": {
+          "eventTime": "2024-10-23T14:15:17.517586Z",
+          "equipType": "FYNG",
+          "vendor": "VENDORA",
+          "model": "FancyNextGeneration"
+        },
+        "rootCauseIndicator": false
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

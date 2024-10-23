@@ -1,0 +1,50 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "pnfRegistration",
+            "eventId": "drona_ONAP Controller for Radio",
+            "eventName": "pnfRegistration_EventType5G",
+            "eventType": "EventType5G",
+            "sequence": 0,
+            "priority": "Low",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "drona",
+            "startEpochMicrosec": 1729692916744448,
+            "lastEpochMicrosec": 1729692916744448,
+            "nfNamingCode": "SDNR",
+            "nfVendorName": "ONAP",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "pnfRegistrationFields": {
+            "pnfRegistrationFieldsVersion": "2.1",
+            "lastServiceDate": "2021-03-26",
+            "macAddress": "02:42:f7:d4:62:ce",
+            "manufactureDate": "2021-01-16",
+            "modelNumber": "ONAP Controller for Radio",
+            "oamV4IpAddress": "127.0.0.1",
+            "oamV6IpAddress": "0:0:0:0:0:ffff:a0a:0.1",
+            "serialNumber": "ONAP-SDNR-127.0.0.1-ONAP Controller for Radio",
+            "softwareVersion": "2.3.5",
+            "unitFamily": "ONAP-SDNR",
+            "unitType": "SDNR",
+            "vendorName": "ONAP",
+            "additionalFields": {
+                "oamPort": "830",
+                "protocol": "SSH",
+                "username": "netconf",
+                "password": "netconf",
+                "reconnectOnChangedSchema": "false",
+                "sleep-factor": "1.5",
+                "tcpOnly": "false",
+                "connectionTimeout": "20000",
+                "maxConnectionAttempts": "100",
+                "betweenAttemptsTimeout": "2000",
+                "keepaliveDelay": "120"
+            }
+        }
+    }
+}

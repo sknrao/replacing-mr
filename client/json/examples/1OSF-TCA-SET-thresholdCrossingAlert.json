@@ -1,0 +1,50 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "thresholdCrossingAlert",
+            "eventId": "__TCA",
+            "eventName": "thresholdCrossingAlert_O_RAN_COMPONENT_TCA_TCA",
+            "eventType": "O_RAN_COMPONENT_TCA",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "",
+            "startEpochMicrosec": 1729692919366678,
+            "lastEpochMicrosec": 1729692919366678,
+            "nfNamingCode": "1OSF",
+            "nfVendorName": "",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "thresholdCrossingAlertFields": {
+            "thresholdCrossingFieldsVersion": "4.0",
+            "additionalParameters": [{
+                "criticality": "MAJ",
+                "hashMap": { "additionalProperties": "up-and-down" },
+                "thresholdCrossed": "packetLoss"
+            }],
+            "alertAction": "SET",
+            "alertDescription": "TCA",
+            "alertType": "INTERFACE-ANOMALY",
+            "alertValue": "1OSF",
+            "associatedAlertIdList": ["loss-of-signal"],
+            "collectionTimestamp": "Wed, 23 Oct 2024 14:15:19 +0000",
+            "dataCollector": "data-lake",
+            "elementType": "1OSF",
+            "eventSeverity": "WARNING",
+            "eventStartTimestamp": "Wed, 23 Oct 2024 14:15:00 +0000",
+            "interfaceName": "",
+            "networkService": "from-a-to-b",
+            "possibleRootCause": "always-the-others",
+            "additionalFields": {
+                "eventTime": "2024-10-23T14:15:19.366678Z",
+                "equipType": "1OSF",
+                "vendor": "",
+                "model": ""
+            }
+        }
+    }
+}

@@ -48,6 +48,7 @@ def sendVesEvent(data):
     if response.status_code >= 200 and response.status_code <= 300:
       print(response)
     else:
+      print(response)
       print(response.status_code)
       sys.exit('Sending VES "stndDefined" message template failed with code %d.' % response.status_code)
 

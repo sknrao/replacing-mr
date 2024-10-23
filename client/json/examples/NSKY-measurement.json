@@ -1,0 +1,70 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "measurement",
+            "eventId": "O-RAN-FH-IPv6-01_1729692900_PM15min",
+            "eventName": "measurement_O_RAN_COMPONENT_PM15min",
+            "eventType": "O_RAN_COMPONENT_PM15min",
+            "sequence": 0,
+            "priority": "Low",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "O-RAN-FH-IPv6-01",
+            "startEpochMicrosec": 1729692000000000,
+            "lastEpochMicrosec": 1729692900000000,
+            "internalHeaderFields": {
+                "intervalStartTime": "Wed, 23 Oct 2024 14:00:00 +0000",
+                "intervalEndTime": "Wed, 23 Oct 2024 14:15:00 +0000"
+            },
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "measurementFields": {
+            "additionalFields": {},
+            "additionalMeasurements": [{
+                    "name": "4af8681f-f2e4-4058-8052-4e9343ee7bf2-1",
+                    "hashMap": {
+                        "es": "0",
+                        "ses": "1",
+                        "cses": "0",
+                        "unavailability": "0"
+                    }
+                },
+                {
+                    "name": "4af8681f-f2e4-4058-8052-4e9343ee7bf2-2",
+                    "hashMap": {
+                        "es": "0",
+                        "ses": "1",
+                        "cses": "0",
+                        "unavailability": "0"
+                    }
+                }
+            ],
+            "additionalObjects": [],
+            "codecUsageArray": [],
+            "concurrentSessions": 2,
+            "configuredEntities": 2,
+            "cpuUsageArray": [],
+            "diskUsageArray": [],
+            "featureUsageArray": {
+                "https://www.itu.int/rec/T-REC-G.841": "true"
+            },
+            "filesystemUsageArray": [],
+            "hugePagesArray": [],
+            "ipmi": {},
+            "latencyDistribution": [],
+            "loadArray": [],
+            "machineCheckExceptionArray": [],
+            "meanRequestLatency": 1000,
+            "measurementInterval": 234,
+            "measurementFieldsVersion": "4.0",
+            "memoryUsageArray": [],
+            "numberOfMediaPortsInUse": 234,
+            "requestRate": 23,
+            "nfcScalingMetric": 3,
+            "nicPerformanceArray": [],
+            "processStatsArray": []
+        }
+    }
+}

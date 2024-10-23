@@ -1,0 +1,60 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "LKCYFL79Q01M01FYNG01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_",
+      "eventName": "stndDefined_O_RAN_COMPONENT_pnf_registration",
+      "eventType": "O_RAN_COMPONENT_pnf_registration",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "LKCYFL79Q01M01FYNG01",
+      "startEpochMicrosec": 1729692919947880,
+      "lastEpochMicrosec": 1729692919947880,
+      "nfNamingCode": "FYNG",
+      "nfVendorName": "VENDORA",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "o1-notify-pnf-registration",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://gerrit.o-ran-sc.org/r/gitweb?p=scp/oam/modeling.git;a=blob_plain;f=data-model/yang/working/o-ran-sc/template/yes-o1-notify-pnf-registration.yang",
+      "data": {
+        "object-class": "managed-element",
+        "object-instance": "LKCYFL79Q01M01FYNG01",
+        "notification-identifier": 1729692919947880,
+        "notification-type": "o1-notify-pnf-registration",
+        "event-time": "2024-10-23T14:15:19.947880Z",
+        "system": "xyz",
+        "o1-specification-version": "v07.00",
+        "vendor-pen": "57272",
+        "vendor-name": "highstreet technologies USA Corp.",
+        "oam-host": "@oamIpV6@",
+        "oam-port": 830,
+        "unit-family": "VENDORA-FYNG",
+        "unit-type": "FYNG",
+        "restart-reason": "system-reboot",
+        "serial-number": "VENDORA-FYNG-@oamIp@-FancyNextGeneration",
+        "macAddress": "@macAddress@",
+        "modelNumber": "FancyNextGeneration",
+        "softwareVersion": "2.3.5",
+        "manufactureDate": "2021-01-16",
+        "lastServiceDate": "2021-03-26",
+        "transport-protocol": "SSH",
+        "username": "netconf",
+        "password": "netconf!",
+        "reconnect-on-changed-schema": "false",
+        "sleep-factor": "1.5",
+        "tcpOnly": "false",
+        "connection-timeout": "20000",
+        "max-connection-attempts": "100",
+        "between-attempts-timeout": "2000",
+        "keepalive-delay": "120"
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

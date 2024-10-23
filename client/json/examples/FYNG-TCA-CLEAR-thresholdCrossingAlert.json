@@ -1,0 +1,50 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "thresholdCrossingAlert",
+            "eventId": "LKCYFL79Q01M01FYNG01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_TCA",
+            "eventName": "thresholdCrossingAlert_O_RAN_COMPONENT_TCA_TCA",
+            "eventType": "O_RAN_COMPONENT_TCA",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "LKCYFL79Q01M01FYNG01",
+            "startEpochMicrosec": 1729692919443380,
+            "lastEpochMicrosec": 1729692919443380,
+            "nfNamingCode": "FYNG",
+            "nfVendorName": "VENDORA",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "thresholdCrossingAlertFields": {
+            "thresholdCrossingFieldsVersion": "4.0",
+            "additionalParameters": [{
+                "criticality": "MAJ",
+                "hashMap": { "additionalProperties": "up-and-down" },
+                "thresholdCrossed": "packetLoss"
+            }],
+            "alertAction": "CLEAR",
+            "alertDescription": "TCA",
+            "alertType": "INTERFACE-ANOMALY",
+            "alertValue": "FYNG",
+            "associatedAlertIdList": ["loss-of-signal"],
+            "collectionTimestamp": "Wed, 23 Oct 2024 14:15:19 +0000",
+            "dataCollector": "data-lake",
+            "elementType": "FYNG",
+            "eventSeverity": "NORMAL",
+            "eventStartTimestamp": "Wed, 23 Oct 2024 14:15:00 +0000",
+            "interfaceName": "4af8681f-f2e4-4058-8052-4e9343ee7bf2",
+            "networkService": "from-a-to-b",
+            "possibleRootCause": "always-the-others",
+            "additionalFields": {
+                "eventTime": "2024-10-23T14:15:19.443380Z",
+                "equipType": "FYNG",
+                "vendor": "VENDORA",
+                "model": "FancyNextGeneration"
+            }
+        }
+    }
+}

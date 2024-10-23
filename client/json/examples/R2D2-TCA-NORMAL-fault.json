@@ -1,0 +1,38 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "fault",
+            "eventId": "MMTSIL02Q01M01R2D201_4af8681f-f2e4-4058-8052-4e9343ee7bf2_TCA",
+            "eventName": "fault_O_RAN_COMPONENT_Alarms_TCA",
+            "eventType": "O_RAN_COMPONENT_Alarms",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "MMTSIL02Q01M01R2D201",
+            "startEpochMicrosec": 1729692917087005,
+            "lastEpochMicrosec": 1729692917087005,
+            "nfNamingCode": "R2D2",
+            "nfVendorName": "VENDORB",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "faultFields": {
+            "faultFieldsVersion": "4.0",
+            "alarmCondition": "TCA",
+            "alarmInterfaceA": "4af8681f-f2e4-4058-8052-4e9343ee7bf2",
+            "eventSourceType": "O_RAN_COMPONENT",
+            "specificProblem": "TCA",
+            "eventSeverity": "NORMAL",
+            "vfStatus": "Active",
+            "alarmAdditionalInformation": {
+                "eventTime": "2024-10-23T14:15:17.087005Z",
+                "equipType": "R2D2",
+                "vendor": "VENDORB",
+                "model": "R2D2 NewFuture"
+            }
+        }
+    }
+}

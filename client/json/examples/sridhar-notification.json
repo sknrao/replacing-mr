@@ -1,0 +1,35 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "notification",
+      "eventId": "drona_2024-10-23T07:36:03.880287+00:00Z",
+      "eventName": "notification_O_RAN_COMPONENT",
+      "eventType": "O_RAN_COMPONENT",
+      "lastEpochMicrosec": 1729668963880287,
+      "nfNamingCode": "sridhar",
+      "nfVendorName": "O-RAN-SC OAM",
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sequence": 357,
+      "sourceId": "",
+      "sourceName": "sridhar",
+      "startEpochMicrosec": 1729668963880287,
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "notificationFields": {
+      "additionalFields": {
+        "eventTime": "2024-10-23T07:36:03.880287+00:00Z"
+      },
+      "changeContact": "drona",
+      "changeIdentifier": "sridhar",
+      "changeType": "informal",
+      "newState": "all-good",
+      "notificationFieldsVersion": "2.0",
+      "oldState": "not-too-bad",
+      "stateInterface": "urn:ietf:params:xml:ns:yang:ietf-interfaces:interfaces/interface/name='O-RAN-SC-OAM'"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "pnfRegistration",
+            "eventId": "MMTSIL02Q01M01R2D201_R2D2 NewFuture",
+            "eventName": "pnfRegistration_EventType5G",
+            "eventType": "EventType5G",
+            "sequence": 0,
+            "priority": "Low",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "MMTSIL02Q01M01R2D201",
+            "startEpochMicrosec": 1729692916610185,
+            "lastEpochMicrosec": 1729692916610185,
+            "nfNamingCode": "R2D2",
+            "nfVendorName": "VENDORB",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "pnfRegistrationFields": {
+            "pnfRegistrationFieldsVersion": "2.1",
+            "lastServiceDate": "2021-03-26",
+            "macAddress": "02:42:f7:d4:62:ce",
+            "manufactureDate": "2021-01-16",
+            "modelNumber": "R2D2 NewFuture",
+            "oamV4IpAddress": "10.10.10.13",
+            "oamV6IpAddress": "0:0:0:0:0:ffff:a0a:013",
+            "serialNumber": "VENDORB-R2D2-10.10.10.13-R2D2 NewFuture",
+            "softwareVersion": "2.3.5",
+            "unitFamily": "VENDORB-R2D2",
+            "unitType": "R2D2",
+            "vendorName": "VENDORB",
+            "additionalFields": {
+                "oamPort": "830",
+                "protocol": "SSH",
+                "username": "netconf",
+                "password": "netconf",
+                "reconnectOnChangedSchema": "false",
+                "sleep-factor": "1.5",
+                "tcpOnly": "false",
+                "connectionTimeout": "20000",
+                "maxConnectionAttempts": "100",
+                "betweenAttemptsTimeout": "2000",
+                "keepaliveDelay": "120"
+            }
+        }
+    }
+}

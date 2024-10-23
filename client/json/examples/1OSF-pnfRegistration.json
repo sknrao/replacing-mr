@@ -1,0 +1,50 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "pnfRegistration",
+            "eventId": "_",
+            "eventName": "pnfRegistration_EventType5G",
+            "eventType": "EventType5G",
+            "sequence": 0,
+            "priority": "Low",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "",
+            "startEpochMicrosec": 1729692916722233,
+            "lastEpochMicrosec": 1729692916722233,
+            "nfNamingCode": "1OSF",
+            "nfVendorName": "",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "pnfRegistrationFields": {
+            "pnfRegistrationFieldsVersion": "2.1",
+            "lastServiceDate": "2021-03-26",
+            "macAddress": "02:42:f7:d4:62:ce",
+            "manufactureDate": "2021-01-16",
+            "modelNumber": "",
+            "oamV4IpAddress": "",
+            "oamV6IpAddress": "0:0:0:0:0:ffff:a0a:0",
+            "serialNumber": "-1OSF--",
+            "softwareVersion": "2.3.5",
+            "unitFamily": "-1OSF",
+            "unitType": "1OSF",
+            "vendorName": "",
+            "additionalFields": {
+                "oamPort": "830",
+                "protocol": "SSH",
+                "username": "netconf",
+                "password": "netconf",
+                "reconnectOnChangedSchema": "false",
+                "sleep-factor": "1.5",
+                "tcpOnly": "false",
+                "connectionTimeout": "20000",
+                "maxConnectionAttempts": "100",
+                "betweenAttemptsTimeout": "2000",
+                "keepaliveDelay": "120"
+            }
+        }
+    }
+}

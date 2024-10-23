@@ -1,0 +1,38 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "fault",
+            "eventId": "NSHMRIACQ01M01pnf201_4af8681f-f2e4-4058-8052-4e9343ee7bf2_lossOfSignal",
+            "eventName": "fault_O_RAN_COMPONENT_Alarms_lossOfSignal",
+            "eventType": "O_RAN_COMPONENT_Alarms",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "NSHMRIACQ01M01pnf201",
+            "startEpochMicrosec": 1729692916766735,
+            "lastEpochMicrosec": 1729692916766735,
+            "nfNamingCode": "PNF2",
+            "nfVendorName": "VENDORA",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "faultFields": {
+            "faultFieldsVersion": "4.0",
+            "alarmCondition": "lossOfSignal",
+            "alarmInterfaceA": "4af8681f-f2e4-4058-8052-4e9343ee7bf2",
+            "eventSourceType": "O_RAN_COMPONENT",
+            "specificProblem": "lossOfSignal",
+            "eventSeverity": "CRITICAL",
+            "vfStatus": "Active",
+            "alarmAdditionalInformation": {
+                "eventTime": "2024-10-23T14:15:16.766735Z",
+                "equipType": "PNF2",
+                "vendor": "VENDORA",
+                "model": "pnf2 BestInClass"
+            }
+        }
+    }
+}

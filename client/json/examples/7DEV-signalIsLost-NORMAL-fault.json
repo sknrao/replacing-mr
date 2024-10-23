@@ -1,0 +1,38 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "fault",
+            "eventId": "PRTNILACQ01M017DEV01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_signalIsLost",
+            "eventName": "fault_O_RAN_COMPONENT_Alarms_signalIsLost",
+            "eventType": "O_RAN_COMPONENT_Alarms",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "PRTNILACQ01M017DEV01",
+            "startEpochMicrosec": 1729692917118100,
+            "lastEpochMicrosec": 1729692917118100,
+            "nfNamingCode": "7DEV",
+            "nfVendorName": "VENDORB",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "faultFields": {
+            "faultFieldsVersion": "4.0",
+            "alarmCondition": "signalIsLost",
+            "alarmInterfaceA": "4af8681f-f2e4-4058-8052-4e9343ee7bf2",
+            "eventSourceType": "O_RAN_COMPONENT",
+            "specificProblem": "signalIsLost",
+            "eventSeverity": "NORMAL",
+            "vfStatus": "Active",
+            "alarmAdditionalInformation": {
+                "eventTime": "2024-10-23T14:15:17.118100Z",
+                "equipType": "7DEV",
+                "vendor": "VENDORB",
+                "model": "7200DEV"
+            }
+        }
+    }
+}

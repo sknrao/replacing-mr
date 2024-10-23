@@ -1,0 +1,41 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "__HAAMRunningInLowerModulation",
+      "eventName": "stndDefined_O_RAN_COMPONENT_Alarms_HAAMRunningInLowerModulation",
+      "eventType": "O_RAN_COMPONENT_Alarms",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "",
+      "startEpochMicrosec": 1729692919145136,
+      "lastEpochMicrosec": 1729692919145136,
+      "nfNamingCode": "1OSF",
+      "nfVendorName": "",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "3GPP-FaultSupervision",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/raw/Rel-18/OpenAPI/TS28532_FaultMnS.yaml#components/schemas/NotifyClearedAlarm",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyClearedAlarm",
+        "eventTime": "2024-10-23T14:15:19.145136Z",
+        "systemDN": "xyz",
+        "alarmId": "HAAMRunningInLowerModulation",
+        "alarmType": "COMMUNICATIONS_ALARM",
+        "probableCause": "HAAMRunningInLowerModulation",
+        "perceivedSeverity": "MAJOR",
+        "clearUserId": "",
+        "clearSystemId": ""
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

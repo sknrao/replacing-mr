@@ -1,0 +1,41 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "drona_northbound-interface_connectionLossNe",
+      "eventName": "stndDefined_ONAP_SDNR_Controller_Alarms_connectionLossNe",
+      "eventType": "ONAP_SDNR_Controller_Alarms",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "drona",
+      "startEpochMicrosec": 1729692919162012,
+      "lastEpochMicrosec": 1729692919162012,
+      "nfNamingCode": "SDNR",
+      "nfVendorName": "ONAP",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "3GPP-FaultSupervision",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/raw/Rel-18/OpenAPI/TS28532_FaultMnS.yaml#components/schemas/NotifyClearedAlarm",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyClearedAlarm",
+        "eventTime": "2024-10-23T14:15:19.162012Z",
+        "systemDN": "xyz",
+        "alarmId": "connectionLossNe",
+        "alarmType": "COMMUNICATIONS_ALARM",
+        "probableCause": "connectionLossNe",
+        "perceivedSeverity": "MAJOR",
+        "clearUserId": "ONAP",
+        "clearSystemId": "ONAP"
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

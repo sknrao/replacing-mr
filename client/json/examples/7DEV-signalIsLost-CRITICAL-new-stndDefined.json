@@ -1,0 +1,61 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "PRTNILACQ01M017DEV01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_signalIsLost",
+      "eventName": "stndDefined_O_RAN_COMPONENT_Alarms_signalIsLost",
+      "eventType": "O_RAN_COMPONENT_Alarms",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "PRTNILACQ01M017DEV01",
+      "startEpochMicrosec": 1729692918009055,
+      "lastEpochMicrosec": 1729692918009055,
+      "nfNamingCode": "7DEV",
+      "nfVendorName": "VENDORB",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "3GPP-FaultSupervision",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/raw/Rel-18/OpenAPI/TS28111_FaultNrm.yaml#components/schemas/NotifyNewAlarm",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyNewAlarm",
+        "eventTime": "2024-10-23T14:15:18.009055Z",
+        "systemDN": "xyz",
+        "alarmId": "signalIsLost",
+        "alarmType": "COMMUNICATIONS_ALARM",
+        "probableCause": "signalIsLost",
+        "specificProblem": "signalIsLost",
+        "perceivedSeverity": "CRITICAL",
+        "backedUpStatus": true,
+        "backUpObject": "xyz",
+        "trendIndication": "MORE_SEVERE",
+        "thresholdInfo": {
+          "observedMeasurement": "new",
+          "observedValue": 123.1
+        },
+        "correlatedNotifications": [],
+        "stateChangeDefinition": [{ "operational-state": "DISABLED" }],
+        "monitoredAttributes": {
+          "interface": "4af8681f-f2e4-4058-8052-4e9343ee7bf2"
+        },
+        "proposedRepairActions": "Call the police!",
+        "additionalText": "O-RAN Software Community OAM",
+        "additionalInformation": {
+          "eventTime": "2024-10-23T14:15:18.009055Z",
+          "equipType": "7DEV",
+          "vendor": "VENDORB",
+          "model": "7200DEV"
+        },
+        "rootCauseIndicator": false
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

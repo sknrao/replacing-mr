@@ -11,8 +11,8 @@
       "reportingEntityName": "drona",
       "sourceId": "",
       "sourceName": "",
-      "startEpochMicrosec": 1723044835853008,
-      "lastEpochMicrosec": 1723044835853008,
+      "startEpochMicrosec": 1729669491987668,
+      "lastEpochMicrosec": 1729669491987668,
       "nfNamingCode": "",
       "nfVendorName": "",
       "timeZoneOffset": "+00:00",
@@ -21,12 +21,12 @@
       "vesEventListenerVersion": "7.2.1"
     },
     "stndDefinedFields": {
-      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/-/raw/Rel-16/OpenAPI/TS28532_HeartbeatNtf.yaml#components/schemas/NotifyHeartbeat",
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/raw/Rel-18/OpenAPI/TS28532_HeartbeatNtf.yaml#components/schemas/NotifyHeartbeat",
       "data": {
         "href": "href1",
         "notificationId": 0,
         "notificationType": "notifyHeartbeat",
-        "eventTime": "2024-08-07T15:33:55.853008Z",
+        "eventTime": "2024-10-23T07:44:51.987668Z",
         "systemDN": "xyz",
         "heartbeatNtfPeriod": 120
       },

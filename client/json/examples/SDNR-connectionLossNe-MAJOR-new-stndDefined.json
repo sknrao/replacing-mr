@@ -1,0 +1,61 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "drona_northbound-interface_connectionLossNe",
+      "eventName": "stndDefined_ONAP_SDNR_Controller_Alarms_connectionLossNe",
+      "eventType": "ONAP_SDNR_Controller_Alarms",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "drona",
+      "startEpochMicrosec": 1729692918663394,
+      "lastEpochMicrosec": 1729692918663394,
+      "nfNamingCode": "SDNR",
+      "nfVendorName": "ONAP",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "3GPP-FaultSupervision",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/raw/Rel-18/OpenAPI/TS28111_FaultNrm.yaml#components/schemas/NotifyNewAlarm",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyNewAlarm",
+        "eventTime": "2024-10-23T14:15:18.663394Z",
+        "systemDN": "xyz",
+        "alarmId": "connectionLossNe",
+        "alarmType": "COMMUNICATIONS_ALARM",
+        "probableCause": "connectionLossNe",
+        "specificProblem": "connectionLossNe",
+        "perceivedSeverity": "MAJOR",
+        "backedUpStatus": true,
+        "backUpObject": "xyz",
+        "trendIndication": "MORE_SEVERE",
+        "thresholdInfo": {
+          "observedMeasurement": "new",
+          "observedValue": 123.1
+        },
+        "correlatedNotifications": [],
+        "stateChangeDefinition": [{ "operational-state": "DISABLED" }],
+        "monitoredAttributes": {
+          "interface": "northbound-interface"
+        },
+        "proposedRepairActions": "Call the police!",
+        "additionalText": "O-RAN Software Community OAM",
+        "additionalInformation": {
+          "eventTime": "2024-10-23T14:15:18.663394Z",
+          "equipType": "SDNR",
+          "vendor": "ONAP",
+          "model": "ONAP Controller for Radio"
+        },
+        "rootCauseIndicator": false
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}

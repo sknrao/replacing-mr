@@ -1,0 +1,38 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "fault",
+            "eventId": "LKCYFL79Q01M01FYNG01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_TCA",
+            "eventName": "fault_O_RAN_COMPONENT_Alarms_TCA",
+            "eventType": "O_RAN_COMPONENT_Alarms",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "LKCYFL79Q01M01FYNG01",
+            "startEpochMicrosec": 1729692916811420,
+            "lastEpochMicrosec": 1729692916811420,
+            "nfNamingCode": "FYNG",
+            "nfVendorName": "VENDORA",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "faultFields": {
+            "faultFieldsVersion": "4.0",
+            "alarmCondition": "TCA",
+            "alarmInterfaceA": "4af8681f-f2e4-4058-8052-4e9343ee7bf2",
+            "eventSourceType": "O_RAN_COMPONENT",
+            "specificProblem": "TCA",
+            "eventSeverity": "MAJOR",
+            "vfStatus": "Active",
+            "alarmAdditionalInformation": {
+                "eventTime": "2024-10-23T14:15:16.811420Z",
+                "equipType": "FYNG",
+                "vendor": "VENDORA",
+                "model": "FancyNextGeneration"
+            }
+        }
+    }
+}

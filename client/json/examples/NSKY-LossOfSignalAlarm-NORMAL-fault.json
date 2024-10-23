@@ -1,0 +1,38 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "fault",
+            "eventId": "O-RAN-FH-IPv6-01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_LossOfSignalAlarm",
+            "eventName": "fault_O_RAN_COMPONENT_Alarms_LossOfSignalAlarm",
+            "eventType": "O_RAN_COMPONENT_Alarms",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "O-RAN-FH-IPv6-01",
+            "startEpochMicrosec": 1729692917148278,
+            "lastEpochMicrosec": 1729692917148278,
+            "nfNamingCode": "NSKY",
+            "nfVendorName": "VENDORC",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "faultFields": {
+            "faultFieldsVersion": "4.0",
+            "alarmCondition": "LossOfSignalAlarm",
+            "alarmInterfaceA": "4af8681f-f2e4-4058-8052-4e9343ee7bf2",
+            "eventSourceType": "O_RAN_COMPONENT",
+            "specificProblem": "LossOfSignalAlarm",
+            "eventSeverity": "NORMAL",
+            "vfStatus": "Active",
+            "alarmAdditionalInformation": {
+                "eventTime": "2024-10-23T14:15:17.148278Z",
+                "equipType": "NSKY",
+                "vendor": "VENDORC",
+                "model": "TheSkyIsTheLimit"
+            }
+        }
+    }
+}

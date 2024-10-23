@@ -1,0 +1,38 @@
+{
+    "event": {
+        "commonEventHeader": {
+            "domain": "fault",
+            "eventId": "__HAAMRunningInLowerModulation",
+            "eventName": "fault_O_RAN_COMPONENT_Alarms_HAAMRunningInLowerModulation",
+            "eventType": "O_RAN_COMPONENT_Alarms",
+            "sequence": 0,
+            "priority": "High",
+            "reportingEntityId": "",
+            "reportingEntityName": "drona",
+            "sourceId": "",
+            "sourceName": "",
+            "startEpochMicrosec": 1729692916944100,
+            "lastEpochMicrosec": 1729692916944100,
+            "nfNamingCode": "1OSF",
+            "nfVendorName": "",
+            "timeZoneOffset": "+00:00",
+            "version": "4.1",
+            "vesEventListenerVersion": "7.2.1"
+        },
+        "faultFields": {
+            "faultFieldsVersion": "4.0",
+            "alarmCondition": "HAAMRunningInLowerModulation",
+            "alarmInterfaceA": "",
+            "eventSourceType": "O_RAN_COMPONENT",
+            "specificProblem": "HAAMRunningInLowerModulation",
+            "eventSeverity": "MAJOR",
+            "vfStatus": "Active",
+            "alarmAdditionalInformation": {
+                "eventTime": "2024-10-23T14:15:16.944100Z",
+                "equipType": "1OSF",
+                "vendor": "",
+                "model": ""
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "event": {
+    "commonEventHeader": {
+      "domain": "stndDefined",
+      "eventId": "O-RAN-FH-IPv6-01_4af8681f-f2e4-4058-8052-4e9343ee7bf2_",
+      "eventName": "stndDefined_O_RAN_COMPONENT_Alarms_@alarm@",
+      "eventType": "O_RAN_COMPONENT_Alarms",
+      "sequence": 0,
+      "priority": "Low",
+      "reportingEntityId": "",
+      "reportingEntityName": "drona",
+      "sourceId": "",
+      "sourceName": "O-RAN-FH-IPv6-01",
+      "startEpochMicrosec": 1729692921237958,
+      "lastEpochMicrosec": 1729692921237958,
+      "nfNamingCode": "NSKY",
+      "nfVendorName": "@vendor@",
+      "timeZoneOffset": "+00:00",
+      "version": "4.1",
+      "stndDefinedNamespace": "file-ready",
+      "vesEventListenerVersion": "7.2.1"
+    },
+    "stndDefinedFields": {
+      "schemaReference": "https://forge.3gpp.org/rep/sa5/MnS/raw/Rel-18/OpenAPI/TS28532_FileDataReportingMnS.yaml#components/schemas/NotifyFileReady",
+      "data": {
+        "href": "href1",
+        "notificationId": 0,
+        "notificationType": "notifyFileReady",
+        "eventTime": "2024-10-23T14:15:21.237958Z",
+        "systemDN": "xyz",
+        "fileInfoList": [{
+            "fileLocation": "/pm-data-files/A20241023.1400+0000-1415+0000_O-RAN-FH-IPv6-01.xml",
+            "fileSize": 1234,
+            "fileReadyTime": "2024-10-23T14:15:21.237958Z",
+            "fileExpirationTime": "2024-10-23T14:15:21.237958Z",
+            "fileCompression": "no",
+            "fileFormat": "xml",
+            "fileDataType": "Performance"
+        }
+        ],
+        "additionalText": "Have fun!"
+      },
+      "stndDefinedFieldsVersion": "1.0"
+    }
+  }
+}
